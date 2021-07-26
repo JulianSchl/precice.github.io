@@ -7,6 +7,7 @@ summary: You can export your coupling meshes to vtk. This is a great feature for
 
 Well, it's easy. Just write ...
 
+
 ```xml
 <participant name="MySolver1"> 
     <use-mesh name="MyMesh1" provide="yes"/>
@@ -15,6 +16,8 @@ Well, it's easy. Just write ...
     ...
 </participant>
 ```
+Note: the export must come after the `use-mesh` argument!
+
 
 With `directory`, you can give an extra folder to write the VTK files to, relative to the location from where you start the participant. preCICE writes output for every `use-mesh` separately.
 
